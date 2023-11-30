@@ -13,3 +13,17 @@
   background-color: white;
   color: black;
 }
+.star {
+  border-radius: 20px;
+  background: rgba(229, 251, 243, 0.29);
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.review {
+  border-radius: 8px;
+  border: 1px solid #1fc28b;
+}

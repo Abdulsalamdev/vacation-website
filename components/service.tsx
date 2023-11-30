@@ -30,10 +30,10 @@ export function Service() {
         <p className="text-[#000000] font-semibold font-Work-Sans text-[35px]">
           Our Services
         </p>
-        <div className="flex justify-between gap-[30px] flex-wrap-reverse items-center">
+        <div className="flex justify-center gap-[30px] flex-wrap-reverse items-center">
           {items.map((item, index) => (
             <div
-              className="bg-[#FFFFFF] p-[30px] flex flex-col gap-[20px]"
+              className="bg-[#FFFFFF] p-[30px] flex flex-col gap-[20px] rounded-[10px]"
               key={index}
             >
               <Image src={item.image} alt={""} width={50} height={50} />
@@ -43,7 +43,7 @@ export function Service() {
               <p className="text-[15px] text-[#484848] font-Work-Sans font-medium max-w-[280px]">
                 {item.description}
               </p>
-              <button className="bg-[#1FC28B] text-[white] rounded-[8px] p-[10px]">
+              <button className="bg-[#1FC28B] text-[white] rounded-[8px] p-[10px] w-[130px]">
                 {item.check}
               </button>
             </div>
