@@ -16,7 +16,7 @@ export function NavBar() {
   ];
 
   return (
-    <div className="w-[90%] m-auto flex justify-between py-[21px] items-center gap-[10px]">
+    <div className=" flex justify-between py-[21px] items-center gap-[10px]">
       <div className="text-[#1FC28B] text-[clamp(25px,2.2vw,40px)] font-Work-Sans font-bold">
         NaijaAir
       </div>

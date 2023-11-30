@@ -3,7 +3,7 @@ import React from "react";
 
 export function Introduction() {
   return (
-    <div className="flex-wrap  gap-[30px] items-center justify-between md:flex">
+    <div className="flex-wrap pb-[20px]  gap-[30px] items-center justify-between md:flex">
       <div className="flex flex-col gap-[20px]">
         <p className="text-[24px] text-[black] font-Work-Sans font-medium">
           Explore the world{" "}
@@ -24,7 +24,7 @@ export function Introduction() {
         </button>
       </div>
       <div>
-        <Image src={"/images/bross.png"} alt={""} width={300} height={300} />
+        <Image src={"/images/bross.png"} alt={""} width={400} height={300} />
       </div>
     </div>
   );
