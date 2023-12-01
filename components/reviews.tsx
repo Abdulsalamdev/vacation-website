@@ -27,7 +27,7 @@ export function Reviews() {
       <p className="text-[#000000] font-Work-Sans font-semibold text-[36px]">
         Customer’s Review
       </p>
-      <div className="flex flex-wrap justify-center gap-[40px] items-center ">
+      <div className="flex flex-wrap justify-center gap-[30px] items-center ">
         {items.map((item, index) => (
           <div
             key={index}
