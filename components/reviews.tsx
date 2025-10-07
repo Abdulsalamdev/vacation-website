@@ -13,7 +13,7 @@ export function Reviews() {
       image: "/images/cos2.png",
       name: "Grace",
       star: "/images/star1.png",
-      title: "Very cheap and accomdating.",
+      title: "Very cheap and accommodating.",
     },
     {
       image: "/images/cos3.png",
@@ -22,18 +22,25 @@ export function Reviews() {
       title: "Highly recommend and stress free.",
     },
   ];
+
   return (
     <div className="w-[90%] m-auto p-[40px] flex flex-col items-center justify-center gap-[30px]">
       <p className="text-[#000000] font-Work-Sans font-semibold text-[36px]">
         Customer’s Review
       </p>
-      <div className="flex flex-wrap justify-center gap-[30px] items-center ">
+      <div className="flex flex-wrap justify-center gap-[30px] items-center">
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center p-[20px] review gap-[10px]"
+            className="flex flex-col justify-center items-center p-[20px] gap-[10px] bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transform transition-all duration-500 ease-out cursor-pointer"
           >
-            <Image src={item.image} alt={""} width={70} height={70} />
+            <Image
+              src={item.image}
+              alt={item.name}
+              width={70}
+              height={70}
+              className="rounded-full transition-transform duration-500 ease-out group-hover:scale-110"
+            />
             <p className="text-[#000000] text-[20px] font-Work-Sans font-medium text-center">
               {item.title}
             </p>
@@ -41,11 +48,9 @@ export function Reviews() {
               {item.name}
             </p>
             <div className="flex justify-center items-center gap-[3px]">
-              <Image src={item.star} alt={""} width={15} height={15} />
-              <Image src={item.star} alt={""} width={15} height={15} />
-              <Image src={item.star} alt={""} width={15} height={15} />
-              <Image src={item.star} alt={""} width={15} height={15} />
-              <Image src={item.star} alt={""} width={15} height={15} />
+              {[...Array(5)].map((_, i) => (
+                <Image key={i} src={item.star} alt="star" width={15} height={15} />
+              ))}
             </div>
           </div>
         ))}
