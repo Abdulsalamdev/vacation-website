@@ -41,7 +41,7 @@ export function Designation() {
     },
   ];
   return (
-    <div className="w-[90%] m-auto p-[40px] flex flex-col items-center justify-center gap-[30px]">
+    <div className="w-[90%] m-auto p-[40px] flex flex-col items-center justify-center gap-[30px]" id="Pricing">
       <p className="text-[#000000] font-Work-Sans font-semibold text-[36px]">
         Our Top Destinations
       </p>

@@ -25,7 +25,7 @@ export function Service() {
     },
   ];
   return (
-    <div className="flex justify-center py-[70px] bg-[#E5FBF3] items-center">
+    <div className="flex justify-center py-[70px] bg-[#E5FBF3] items-center" id="Service">
       <div className="flex flex-col gap-[40px] w-[90%] items-center">
         <p className="text-[#000000] font-semibold font-Work-Sans text-[35px]">
           Our Services

@@ -3,7 +3,7 @@ import React from "react";
 
 export function About() {
   return (
-    <div className="flex-wrap-reverse justify-between gap-[50px] md:flex items-center pb-[50px]">
+    <div className="flex-wrap-reverse justify-between gap-[50px] md:flex items-center pb-[50px]" id="About">
       <div>
         <Image src={"/images/about.png"} alt={""} width={380} height={300} />
       </div>

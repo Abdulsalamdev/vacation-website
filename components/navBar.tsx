@@ -6,13 +6,11 @@ import { Hambuger } from "./closeButton";
 export function NavBar() {
   const [visible, setVisible] = useState(false);
   const items = [
-    { name: "Home", link: "/#" },
-    { name: "About", link: "/#" },
-    { name: "Service", link: "/#" },
-    { name: "Pricing", link: "/#" },
-    { name: "Contact", link: "/#" },
-    { name: "Login", link: "/#" },
-    { name: "Sign Up", link: "/#" },
+    { name: "Home", link: "/" },
+    { name: "About", link: "#About" },
+    { name: "Service", link: "#Service" },
+    { name: "Pricing", link: "#Pricing" },
+    { name: "Contact", link: "#Contact" },
   ];
 
   return (
